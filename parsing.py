@@ -2,9 +2,9 @@
 import requests
 from bs4 import BeautifulSoup
 
-url= "https://www.tuko.co.ke/"
+url= "https://score808.us"
 r=requests.get(url)
 
 
 soup  = BeautifulSoup(r.text,"lxml")
-print(soup.title)
+print(soup.div)
