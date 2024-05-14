@@ -14,7 +14,7 @@ for name in soup.find_all("a", class_="title"):
     product_names.append(name.text)
 print(product_names)
 
-"""
+
 prices = soup.find_all("h4", class_="price float-end card-title pull-right")
 
 product_prices = []
@@ -54,4 +54,3 @@ df= pd.DataFrame({"Product Name":product_names,"Prices":product_prices,
 
 df.to_excel("Product.xlsx")
 
-"""
