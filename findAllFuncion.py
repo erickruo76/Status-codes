@@ -10,5 +10,9 @@ desc= BeautifulSoup(r.text,"lxml")
 elements= desc.find_all("div",{"class":"Kh Nh"})
 
 for element in elements:
-    print(element.text.strip())
+    #print(element.text.strip())
+
+
+        df = elements.DataFrame()
+print(df)
 
